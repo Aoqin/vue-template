@@ -96,7 +96,23 @@
       "extends": ["stylelint-config-recommended-scss"],
       "rules": {
         "at-rule-no-unknown": null,
-        "scss/at-rule-no-unknown": true
+        "scss/at-rule-no-unknown": [
+          true,
+          {
+            "ignoreAtRules": [
+              "tailwind",
+              "apply",
+              "variants",
+              "responsive",
+              "screen",
+              "function",
+              "if",
+              "each",
+              "include",
+              "mixin"
+            ]
+          }
+        ]
       },
       "customSyntax": "postcss-scss"
     }
