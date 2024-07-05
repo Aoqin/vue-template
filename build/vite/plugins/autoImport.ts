@@ -34,9 +34,13 @@ export function configComponentsPlugin() {
       // Auto register Element Plus components
       //   ElementPlusResolver()
     ],
-    dirs: ['!src/components'], // 配置需要默认导入的自定义组件文件夹，该文件夹下的所有组件都会自动 import,默认会导入 src/components 下的组件，这里不需要就排除掉
+    // 配置需要默认导入的自定义组件文件夹，该文件夹下的所有组件都会自动 import,默认会导入 src/components 下的组件，这里不需要就排除掉
+    // dirs: ['!src/components'],
+    // 配置需要默认导入的自定义组件文件夹，该文件夹下的所有组件都会自动 import
+    // globs: ['src/components/*.{vue}'],
+    globs: [],
     dts: true,
-    include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+    include: [/\.vue$/, /\.vue\?vue/],
     exclude: [/node_modules/, /\.git/]
   })
   return componentsPlugin
