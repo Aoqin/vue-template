@@ -9,7 +9,5 @@ declare module 'vue' {
   export interface GlobalComponents {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    'Vite.config.ts.timestamp1720143659791C26903567269a': typeof import('./vite.config.ts.timestamp-1720143659791-c26903567269a.mjs')['default']
-    'Vite.config.ts.timestamp1720143732524C50a4f4fd709a': typeof import('./vite.config.ts.timestamp-1720143732524-c50a4f4fd709a.mjs')['default']
   }
 }
