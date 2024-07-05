@@ -18,6 +18,11 @@ export function configAutoImportPlugin() {
     ],
     // include: [/\.[tj]sx?$/, /\.vue$/],
     eslintrc: { enabled: true }
+    // eslintrc: {
+    //   enabled: false,
+    //   filepath: fileURLToPath(new URL('./.eslintrc-auto-import.json', import.meta.url)),
+    //   globalsPropValue: true
+    // }
   })
   return autoImportPlugin
 }
